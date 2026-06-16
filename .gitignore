@@ -1,0 +1,39 @@
+# --- Dataset (not redistributable, see DATA.md) ---
+occlusion_datasets/
+Crop_224_5fp_100K/
+*.webp
+
+# --- Checkpoints and caches (re-created by final_pipeline.py) ---
+checkpoints/
+checkpoints_*/
+models_efficientnet/
+final_cache/
+.cache/
+
+# --- Archives, Windows metadata ---
+*.zip
+*Zone.Identifier
+
+# --- Experimental intermediate mixes (only canonical submissions are tracked) ---
+mix_all_submission.csv
+mix_current_blend_*.csv
+test_predictions*.csv
+win_submission.csv
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+.env/
+env/
+venv/
+
+# --- OS / editors ---
+.DS_Store
+.idea/
+.vscode/
+*.swp

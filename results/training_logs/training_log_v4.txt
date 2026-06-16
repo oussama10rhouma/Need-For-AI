@@ -1,0 +1,41 @@
+torch 2.8.0+cu128 | timm 1.0.27
+train 100,000 | test 29,980
+[gender] cached | OOF acc 0.9741
+[v2] v2_convnext_base cached
+[v2] v2_eva02_base_patch14_224 cached
+[v2] v2_tf_efficientnetv2_s cached
+[v1] convnext_base.clip_laion2b_augreg_ft_in12k_in1k partial OOF (60,000 rows): 0.001527
+[v1] v1_convnext_base cached
+[v1] v1_eva02_base_patch14_224 cached
+[old] cached
+[fair] cached
+[blend] source fair_eva                       OOF 0.001694 gap 0.000522 (coverage 100,000/100,000)
+[blend] source hires_convnext_base_384        OOF 0.001472 gap 0.000505 (coverage 40,000/100,000)
+[blend] source old_effnet                     OOF 0.002079 gap 0.000600 (coverage 80,000/100,000)
+[blend] source v2_convnext_base               OOF 0.001539 gap 0.000458 (coverage 100,000/100,000)
+[blend] source v2_eva02_base_patch14_224      OOF 0.001478 gap 0.000386 (coverage 100,000/100,000)
+[blend] source v2_tf_efficientnetv2_s         OOF 0.001905 gap 0.000452 (coverage 100,000/100,000)
+[blend] merged v1_convnext_base.npz (3 folds) into v2_convnext_base
+[blend] merged v1_eva02_base_patch14_224.npz (1 folds) into v2_eva02_base_patch14_224
+[VAL] split 0: frozen 0.001189 | no-cal 0.001189 | cal gain on VAL +0.000000 (CAL 0.001328 -> 0.001328)
+[VAL] split 1: frozen 0.001211 | no-cal 0.001211 | cal gain on VAL +0.000000 (CAL 0.001320 -> 0.001320)
+[VAL] split 2: frozen 0.001300 | no-cal 0.001300 | cal gain on VAL +0.000000 (CAL 0.001304 -> 0.001304)
+[VAL] split 3: frozen 0.000999 | no-cal 0.000999 | cal gain on VAL +0.000000 (CAL 0.001380 -> 0.001380)
+[VAL] split 4: frozen 0.000989 | no-cal 0.000989 | cal gain on VAL +0.000000 (CAL 0.001377 -> 0.001377)
+
+[VAL] procedure estimate over 5 splits: 0.001138 +/- 0.000123
+[VAL] ablation without ['hires_convnext_base_384', 'old_effnet'] on SAME subset: 0.001125 | true contribution: -0.000012
+[blend] weights:
+  fair_eva                      : 0.000
+  hires_convnext_base_384       : 0.104
+  old_effnet                    : 0.154
+  v2_convnext_base              : 0.348
+  v2_eva02_base_patch14_224     : 0.394
+  v2_tf_efficientnetv2_s        : 0.000
+[cal] F a=1.000 b=+0.0000 | M a=1.000 b=+0.0000 | use_cal=False
+[final] fit-on-all CAL-equivalent score: blend 0.001299 -> cal 0.001299 (optimistic; trust the VAL estimate above)
+
+[done] final_submission.csv (29980 rows) | range [0.0071, 0.5326] mean 0.1757
+[done] expected LB ~ 0.001138 +/- 0.000123 (modulo train/test shift)
+
+Total: 0.11 h

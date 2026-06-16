@@ -1,0 +1,32 @@
+combo,k,val_score,val_std,anchored_LB
+final_submission + old_regen_submission,2,0.001279,0.000417,0.000966
+win_submission + old_regen_submission,2,0.001279,0.000417,0.000966
+win_submission + mixed_submission + old_regen_submission + mix_all_submission,4,0.00128,0.000416,0.000966
+final_submission + mixed_submission + old_regen_submission + mix_all_submission,4,0.00128,0.000416,0.000966
+final_submission + old_regen_submission + mix_all_submission,3,0.001279,0.000416,0.000966
+win_submission + mixed_submission + old_regen_submission,3,0.001279,0.000416,0.000966
+win_submission + old_regen_submission + mix_all_submission,3,0.001279,0.000416,0.000966
+final_submission + mixed_submission + old_regen_submission,3,0.001279,0.000416,0.000966
+mixed_submission + old_regen_submission + mix_all_submission,3,0.001279,0.000417,0.000966
+final_submission + win_submission + old_regen_submission,3,0.001281,0.000415,0.000967
+mixed_submission + old_regen_submission,2,0.00128,0.000419,0.000967
+old_regen_submission + mix_all_submission,2,0.00128,0.000419,0.000967
+final_submission + win_submission + mixed_submission + old_regen_submission,4,0.001281,0.000415,0.000967
+final_submission + win_submission + old_regen_submission + mix_all_submission,4,0.001281,0.000415,0.000967
+mixed_submission + mix_all_submission,2,0.001282,0.000415,0.000968
+mixed_submission,1,0.001282,0.000415,0.000968
+final_submission + win_submission + mixed_submission + old_regen_submission + mix_all_submission,5,0.001281,0.000415,0.000968
+mix_all_submission,1,0.001282,0.000415,0.000968
+win_submission + mixed_submission + mix_all_submission,3,0.001286,0.000413,0.000971
+final_submission + mixed_submission + mix_all_submission,3,0.001286,0.000413,0.000971
+final_submission + mixed_submission,2,0.001289,0.000411,0.000974
+final_submission + mix_all_submission,2,0.001289,0.000411,0.000974
+win_submission + mixed_submission,2,0.001289,0.000411,0.000974
+win_submission + mix_all_submission,2,0.001289,0.000411,0.000974
+final_submission + win_submission + mixed_submission + mix_all_submission,4,0.001289,0.000411,0.000974
+final_submission + win_submission + mixed_submission,3,0.001293,0.000409,0.000976
+final_submission + win_submission + mix_all_submission,3,0.001293,0.000409,0.000976
+old_regen_submission,1,0.001295,0.000424,0.000978
+final_submission,1,0.001301,0.000405,0.000983
+win_submission,1,0.001301,0.000405,0.000983
+final_submission + win_submission,2,0.001301,0.000405,0.000983

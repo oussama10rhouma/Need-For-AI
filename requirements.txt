@@ -1,0 +1,21 @@
+# Core deep-learning stack
+torch>=2.0
+torchvision>=0.15
+
+# Models / backbones — timm 1.0.19 is the first release with the EVA-02 224
+# and ConvNeXt-Base CLIP checkpoints the pipeline depends on.
+timm>=1.0.19
+
+# Numerics + data
+numpy
+pandas
+scikit-learn
+Pillow
+packaging
+tqdm
+
+# Notebooks only (training notebooks plot training curves)
+matplotlib
+
+# Jupyter, if you want to run the notebooks locally
+jupyter
