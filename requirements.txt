@@ -14,8 +14,10 @@ Pillow
 packaging
 tqdm
 
-# Notebooks only (training notebooks plot training curves)
+# Notebooks (training notebooks plot training curves; the IDEMIA example
+# notebook uses prettytable for its score tables)
 matplotlib
+prettytable
 
 # Jupyter, if you want to run the notebooks locally
 jupyter
